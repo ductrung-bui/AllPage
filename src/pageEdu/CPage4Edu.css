@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    overscroll-behavior: none;
+  }
+  
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory ;
+  }
+  
+  .container .sectionn{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start ;
+    background-blend-mode: multiply;
+  }
+  
+  .sectionn2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start ;
+    background-blend-mode: multiply;
+  
+  }
+  
+  .sectionn3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start ;
+    background-blend-mode: multiply;
+  
+  }
+  
+  .sectionn4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start ;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sectionn5{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start ;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sectionn5 input{
+    width: 90vh;
+    height: 5vh;
+  }
+  
+  .sectionn4 img {
+    width: 90%;
+    height: 85vh;
+  }
+  
+  .container .sectionn:nth-child(1){
+    background: rgba(0,0,0,0.5)url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+  
+  .container .sectionn2{
+    background: rgba(0,0,0,0.1) url("https://images.unsplash.com/photo-1558021211-6d1403321394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80") ;
+    background-size: 50%;
+    object-fit: cover;
+    background-attachment: fixed;
+  }
+  
+  .container .sectionn3{
+    background: #0ff url(./assets/img3.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    
+  }
+  
+  .container .sectionn4{
+    background: rgba(237,242,247, 0.5) ;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+  }
+  
+  .container .sectionn5{
+    background: #f0f url(./assets/img5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+  
+  .sectionn p{
+    position: absolute;
+    /* background: #fff; */
+    color: #fff;
+    margin-top: 20% ;
+    font-size: 45px;
+    /* line-height: 45px; */
+  }
+  
+  .sectionn h1{
+    position: absolute;
+    /* background: #fff ; */
+    color: #fff;
+    font-size: 90px;
+    /* line-height: 90px; */
+  }
+  
+  .imgGrammar{
+    width: 30vh;
+    height: 100%;
+  }
+  

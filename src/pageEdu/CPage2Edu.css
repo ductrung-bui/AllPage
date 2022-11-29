@@ -1,0 +1,89 @@
+.AppPage2Edu{
+    color: #000;
+    max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+    width: 100vh;
+    border-radius: 5px;
+    z-index: 10;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    /* transform: translateX(25%); */
+  }
+  
+  .backgroundImage{
+    height: 80vh;
+    width: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .background2{
+    height: 40vh;
+    width: 50vh;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  
+  .imageSupport{
+    height: 40vh;
+    width: 50vh;
+  }
+  
+  .backgroundFooter{
+    height: 50vh;
+    width: 30vh;
+    border-radius: 20px;
+    overflow: hidden;
+  
+  }
+  
+  
+  
+  .imageFooter{
+    height: 50vh;
+    width: 30vh;
+  }
+  
+  .backgroundFooter2{
+    height: 25vh;
+    width: 15vh;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .imageFooter2{
+    height: 25vh;
+    width: 30vh;
+  }
+  
+  .magic{
+    font-size: 27px;
+    font-weight: 600;
+    background: linear-gradient(
+      to right,
+      red,
+      blue
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+  
+  
+  
+  
+  

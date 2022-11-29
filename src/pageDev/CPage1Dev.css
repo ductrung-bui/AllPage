@@ -1,0 +1,262 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+body {
+    margin: 0;
+    overflow-X: hidden;
+  }
+  
+  .mainn{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+      to top,
+      #affc41,
+      #c8e7ff,
+      #c0fdff
+    );
+  }
+  
+  .cloud1{
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover !important;
+    grid-column-start: 1;
+  }
+  
+  .cloud2{
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover !important;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  
+  .cloud3{
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover !important;
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+  
+  .cloud4{
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover !important;
+    grid-column-start: 4;
+    grid-row-start: 2;
+  
+  }
+  
+  .cloudAni{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    animation: cloud 10s ease infinite;
+    transform: translateX(-100%);
+  }
+  
+  .mainn > img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .inMainn{
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .inMainn-left{
+    width: 80%;
+    /* margin-top: 200px; */
+    margin-left: 100px;
+    z-index: 5;
+  }
+  
+  .titleMainn {
+    font-size: 90px;
+    background: linear-gradient(
+      to right,
+      #d62828, #f77f00
+    ) ;
+    line-height: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* width: 40%; */
+    font-weight: 700;
+  }
+  
+  .inMainn-right-image{
+    /* background-color: rgba(255, 255, 255, 1); */
+    height: 100px;
+    width: 100px;
+  }
+  
+  .inMainn-right{
+    position: absolute;
+    display: flex;
+    gap: 3em;
+    bottom: -500px;
+    right: 50px;
+    
+  }
+  
+  .coverMainn{
+    background-color: #e3f2fd;
+    height: 300px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+  }
+  
+  .coverMainn > p {
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    background: red;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .svgReact{
+    animation: reactSvg 20s ease-in forwards infinite;
+    transform: translateX(-310%);
+  }
+  
+  .paper{
+    height: 80vh;
+    width: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .paper > p{
+    padding: 20px;
+  }
+  
+  .Button2{
+    position: relative;
+    
+  }
+  
+  .child{
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100px;
+    background: black;
+    /* transform: translateX(150%) translateY(-100%); */
+    z-index: -1;
+    animation: child 0.5s ease-in-out ;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* .boxMainn:nth-child(1){
+    background-image: url("https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+  }
+  
+  .boxMainn:nth-child(2){
+    background-image: url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+  }
+  
+  .boxMainn:nth-child(3){
+    background-image: url("https://images.unsplash.com/photo-1565022536102-f7645c84354a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80");
+    background-size: cover;
+  }
+  
+  .boxMainn:nth-child(4){
+    background-image: url("https://expatlifeinthailand.com//assets/media/2020/03/classroom.jpg");
+    background-size: cover;
+  } */
+  
+  .boxMainn{
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .boxMainn img{
+    position: absolute;
+    width: 28vh;
+    height: 25vh;
+  
+  }
+  
+  .boxMainn:hover img{
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+  }
+  
+  
+  
+  
+  @keyframes reactSvg{
+    
+    0%{
+      transform: translateX(-310%);
+  
+    }
+    100% {
+      transform: translateX(250%);
+  
+    }
+  }
+  
+  @keyframes cloud {
+    0%{
+      transform: translateX(-100%);
+    }  100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes child{
+    0%{
+      transform: translateX(0) translateY(0);
+    } 50% {
+    transform: translateX(150%) translateY(-100%);
+  
+    } 100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  
+  
+  

@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    overscroll-behavior: none;
+    transition: all 400ms ease-in-out;
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Rubik Marker Hatch', cursive; */
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+  
+  
+  
+  .main8{
+    background-image: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80");
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+  }
+  
+  .coverMain8{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0ff;
+    background: rgba(0,0,0,0.3);
+  }
+  
+  .sectionMain8{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: all 400ms ease-in-out;
+  }
+  
+  .sectionLeft8{
+    /* background: rgba(0,0,0,0.5); */
+    /* transition: all 400ms ease-in-out; */
+    height: 25vh;
+  }
+  
+  .sectionLeft8 img{
+    height: 25vh;
+    transition: all 400ms ease-in-out;
+  }
+  
+  .sectionRight8{
+    background: rgba(0,0,0,0.5);
+    width: 40%;
+    font-size: 20px;
+    height: 25vh;
+    margin-left: -300px;
+    opacity: 0;
+    color: #f0f0ff;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sectionMain8:hover > .sectionRight8{
+    animation: hoverShow 400ms ease-in-out forwards;
+  }
+  
+  .section2Main8{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  @keyframes hoverShow{
+    0%{
+      opacity: 0;
+      margin-left: -300px;
+    } 100% {
+      opacity: 1;
+      margin-left: 0px;
+    }
+  }
+  
